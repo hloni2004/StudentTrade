@@ -1,6 +1,7 @@
 package za.ac.cput.domain;
 
 
+
     public class Admin {
 
         private int adminID;
@@ -94,5 +95,6 @@ package za.ac.cput.domain;
         }
 
     }
+
 
 

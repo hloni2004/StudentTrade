@@ -1,7 +1,5 @@
 package za.ac.cput.domain;
 
-
-
 public class Residence {
 
     private Address address;   // Composition: Residence "has-a" Address

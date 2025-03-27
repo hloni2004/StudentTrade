@@ -39,7 +39,7 @@ public class CartItem {
                 '}';
     }
 
-    public class Builder{
+    public static class Builder{
         private int id ;
         private Listing list;
         private List<CartItem> items;

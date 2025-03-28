@@ -20,6 +20,18 @@ public class Cart {
 
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public Student getOwner() {
+        return owner;
+    }
+
+    public List<CartItem> getItems() {
+        return items;
+    }
+
     @Override
     public String toString() {
         return "Cart{" +
@@ -29,7 +41,7 @@ public class Cart {
                 '}';
     }
 
-    public class Builder{
+    public static class Builder{
         private int id;
         private Student owner;
         private List<CartItem> items;

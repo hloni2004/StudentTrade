@@ -32,11 +32,11 @@ public class CartItemRepository implements ICartItemRepository {
 
     @Override
     public CartItem read(Integer cartItemId) {
-        if (cartItemId == null) {
+        if (cartItemId == null) {  // Check for null to avoid NullPointerException
             return null;
         }
         for (CartItem cartItem : cartItemList) {
-            if (cartItem.getId() == cartItemId) {
+            if (cartItem.getId() == cartItemId) {  // Directly compare primitive int
                 return cartItem;
             }
         }

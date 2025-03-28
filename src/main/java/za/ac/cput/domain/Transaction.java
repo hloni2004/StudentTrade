@@ -34,7 +34,7 @@ public class Transaction {
         return id;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 

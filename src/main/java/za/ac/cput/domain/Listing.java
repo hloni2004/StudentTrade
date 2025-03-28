@@ -1,6 +1,7 @@
 package za.ac.cput.domain;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Listing {
@@ -8,12 +9,12 @@ public class Listing {
     private int id ;
     private String title ;
     private String description ;
-    private Date datedPosted;
+    private LocalDate datedPosted;
 
     public Listing(){
 
     }
-    public Listing(Builder builder){
+    public  Listing(Builder builder){
 
         this.id = builder.id;
         this.title = builder.title;
@@ -25,7 +26,7 @@ public class Listing {
         return id;
     }
 
-    public Date getDatedPosted() {
+    public LocalDate getDatedPosted() {
         return datedPosted;
     }
 
@@ -37,19 +38,18 @@ public class Listing {
         return title;
     }
 
-    public class Builder{
-
+    public static class Builder{
         private int id ;
         private String title ;
         private String description ;
-        private Date datedPosted;
+        private LocalDate datedPosted;
 
         public Builder setId(int id) {
             this.id = id;
             return this;
         }
 
-        public Builder setDatedPosted(Date datedPosted) {
+        public Builder setDatedPosted(LocalDate datedPosted) {
             this.datedPosted = datedPosted;
             return this;
         }

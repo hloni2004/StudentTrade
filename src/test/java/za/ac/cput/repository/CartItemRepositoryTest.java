@@ -12,13 +12,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class CartItemRepositoryTest {
 
     private static ICartItemRepository repository = CartItemRepository.getRepository();
-
     private static List<CartItem> items = new ArrayList<>();
-    //private static Student student = new Student();
     private static CartItem cartItem = new CartItem.Builder().setId(1).setItems(items).build();
 
     @Test
     void a_create() {
+        // Create CartItem and check if it's not null
         CartItem createdCartItem = repository.create(cartItem);
         assertNotNull(createdCartItem);
         System.out.println(createdCartItem.toString());
@@ -41,7 +40,6 @@ class CartItemRepositoryTest {
     }
 
     @Test
-    @Disabled
     void d_delete() {
         repository.create(cartItem);
         boolean isDeleted = repository.delete(cartItem.getId());

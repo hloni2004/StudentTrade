@@ -11,7 +11,7 @@ import java.time.LocalDate;
 
 public class TransactionFactory {
 
-    public Transaction createTransaction(int id, Student buyer, Student seller, Cart cart, Listing listing, double amount, String deliveryOption, LocalDate date) {
+    public static Transaction createTransaction(int id, Student buyer, Student seller, Cart cart, Listing listing, double amount, String deliveryOption, LocalDate date) {
 
         if(TransactionHelper.notValidID(id)){
 

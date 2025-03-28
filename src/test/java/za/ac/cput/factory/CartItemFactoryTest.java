@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class CartItemFactoryTest {
 
-    private static Listing listing1 = new Listing();
+    //private static Listing listing1 = new Listing(1,"hloni","phone",);
     private static List<CartItem> cartItems = new ArrayList<>();  // Empty cart items list
 
     private static CartItem ci1 = CartItemFactory.createCartItem(101, listing1, cartItems);
